@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+        html {
+            min-height: 100%;
+            position: relative;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .bolder {
+            font-weight: bolder;
+        }
+
+        .container_01 {
+            display: flex;
+        }
+
+        .container_02 {
+            display: flex;
+        }
+
+        .container_01_01 {
+            padding-left: 2em;
+        }
+
+        .container_01__title {
+            color: transparent;
+            -webkit-text-stroke: 1px rgb(255, 120, 0);
+            font-size: 2rem;
+        }
+
+        .container_01__subtitle_01,
+        .container_01__subtitle_02,
+        .container_01__icon_01,
+        .container_01__icon_02,
+        .container_01__input_01,
+        .container_01__input_02,
+        .container_02__icon_01,
+        .container_02__icon_02 {
+            color: rgb(226, 106, 1);
+        }
+
+        .container_01__subtitle_01 {
+            font-size: 2rem;
+        }
+
+        .container_02__icon_01 {
+            font-size: 2.5rem;
+            font-weight: bolder;
+        }
+
+        .container_02__icon_02 {
+            font-size: 4rem;
+        }
+
+        .container_01__subtitle_02 {
+            font-weight: bolder;
+            font-size: 3rem;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        .container_01__subtitle_03,
+        .container_01__subtitle_04 {
+            color: rgb(226, 106, 1);
+            text-align: center;
+            font-size: 1.7rem;
+        }
+
+        .container_02__subtitle_01 {
+            color: rgb(226, 106, 1);
+            font-size: 1.9rem;
+        }
+
+        .container_01__paragraph_01,
+        .container_01__paragraph_02,
+        .container_01__paragraph_03,
+        .container_02__paragraph_01 {
+            color: rgb(127, 127, 127);
+            font-size: 1.9rem;
+        }
+
+        .container_02__paragraph_01 {
+            font-size: 1.3rem;
+        }
+
+        .container_02__paragraph_02 {
+            font-size: 1.3rem;
+        }
+
+        .container_02__paragraph_03 {
+            color: rgb(100, 99, 99);
+            font-size: 1.9rem;
+            width: 98%;
+        }
+
+        .container_01__input_01 {
+            padding-top: 1.2em;
+            text-align: center;
+            font-size: 1.8rem;
+        }
+
+        .container_01__input_02 {
+            text-align: center;
+            font-size: 1.8rem;
+        }
+
+
+        .container_01__inputfile_01,
+        .container_01__inputfile_02 {
+            min-width: 150px;
+            width: 30%;
+            height: 40px;
+            font-size: 1.5rem;
+        }
+
+        .container_01__subtitle_04,
+        .container_01__subtitle_05 {
+            border: 1px solid white;
+            color: white;
+            padding: 0.5em 0;
+            border-radius: 7px;
+            background-color: rgb(61, 59, 59);
+            box-shadow: -12px 1px 23px -2px rgba(0, 0, 0, 0.5);
+            margin: 1em 1.5em;
+            font-size: 1.8rem;
+        }
+
+        .container_01__subtitle_05 {
+            margin: 2em 1.5em 0 0;
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 97%;
+        }
+
+        th {
+            border-top: 1px solid rgb(226, 106, 1);
+            border-bottom: 1px solid rgb(226, 106, 1);
+            border-width: 0.2rem;
+            color: rgb(100, 99, 99);
+            font-weight: bolder;
+            padding: 1.2em 0;
+            font-size: 1.4rem;
+        }
+
+        td {
+            border-top: 1px solid rgb(226, 106, 1);
+            border-bottom: 1px solid rgb(226, 106, 1);
+            border-width: 0.2rem;
+            background-color: rgb(250, 207, 217);
+            color: rgb(100, 99, 99);
+            font-weight: bolder;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        .container_02__block_01 {
+            display: flex;
+            margin-top: 1.5em;
+        }
+
+        .container_02__block_02 {
+            margin: 1em 0.5em;
+            display: flex;
+            align-items: center;
+        }
+
+        .container_02__paragraph_04 {
+            color: rgb(127, 127, 127);
+            margin-left: 0.8em;
+            width: 92%;
+            font-size: 1.6rem;
+        }
+
+        .container_02__paragraph_05 {
+            color: rgb(127, 127, 127);
+            font-size: 1.3rem;
+            margin-left: 1.8rem;
+        }
+
+        .container_02__block_03 {
+            width: 95%;
+            height: auto;
+        }
+
+        .container_02__paragraph_06 {
+            color: rgb(226, 106, 1);
+            font-size: 1.7rem;
+            text-align: center;
+            width: 58%;
+            font-weight: bolder;
+            margin: 0.2em auto;
+            padding: 0;
+        }
+
+        .container_02__img_01 {
+            position: relative;
+            margin-top: 3em;
+            left: -45px;
+
+        }
+
+        .container_02__paragraph_07 {
+            text-align: center;
+            color: rgb(100, 99, 99);
+            font-size: 2rem;
+            height: 150px;
+        }
+
+        .footer {
+            border: 1px solid red;
+            position: absolute;
+            width: 100%;
+            right: 0;
+            bottom: 0;
+            height: 90px;
+            background-image: url('./L2_FOOTER.png');
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+
+        .footer__text {
+            background-color: rgb(255, 120, 0);
+            color: white;
+            font-size: 1.4rem;
+            font-weight: bolder;
+            width: 40%;
+        }
+        
+        .footer__logo {
+            position: relative;
+            bottom: 50%;
+            left: 45%;
+        }
+
+        .container_footer__text {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: -70px;
+        }
+    </style>
+    <title>Formato CO - Plazo Fijo</title>
+</head>
+
+<body>
+    <main>
+        <div class="container_01">
+            <div class="container_01_01">
+                <header>
+                    <h1 class="container_01__title">Hola XXX!</h1>
+                    <p class="container_01__subtitle_01">¡Tenemos muy buenas noticias!</p>
+                </header>
+                <section>
+                    <h2 class="container_01__subtitle_02">¡Queremos que seas un ituber!</h2>
+                    <p class="container_01__paragraph_01">Te invitamos a sumarte a Itaú, para que con tu experiencia y
+                        nuevas ideas sigamos avanzando en ser el
+                        banco
+                        líder en performance sustentable y satisfacción de clientes</p>
+                    <h3 class="container_01__subtitle_03">¿Qué es ser un <span class="bolder">ituber</span>?</h3>
+                    <p class="container_01__paragraph_02">Buscar transformarse, desafiarse e innovar, siempre al
+                        servicio de los clientes. Los itubers nos
+                        movilizamos,
+                        avanzamos y aprendemos. Somos diversos, eficientes y conectados. Orgullosos de lo que hacemos,
+                        en un
+                        banco
+                        donde todo lo que se hace, se hace por las personas, contigo y en colaboración con otros.</p>
+                    <h3 class="container_01__subtitle_03">¿Quieres marcar la diferencia? <span class="bolder">¡Itaú es
+                            tu lugar!</span></h3>
+                    <p class="container_01__paragraph_03">A continuación, encontrarás las condiciones ofrecidas:</p>
+                </section>
+                <section>
+                    <div class="container_01__input_01">
+                        <i class="ri-user-line container_01__icon_01"></i>
+                        Cargo&nbsp;&nbsp;&nbsp;&nbsp;:
+                        <input class="container_01__inputfile_01" disabled type="text">
+                    </div>
+                    <br>
+                    <div class="container_01__input_02">
+                        <i class="ri-shake-hands-fill container_01__icon_02"></i>
+                        Contrato:
+                        <input class="container_01__inputfile_02" disabled type="text">
+                    </div>
+                </section>
+            </div>
+            <div>
+                <img src="./L2_01.png" alt="">
+            </div>
+        </div>
+        <h3 class="container_01__subtitle_04">Montos Fijos Mensuales</h3>
+        <div class="container_02">
+            <div class="container_02__img_01">
+                <img src="./L2_02.png" alt="">
+            </div>
+            <div>
+                <section>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sueldo Base</th>
+                                <th>Gratificación</th>
+                                <th>Renta Bruta</th>
+                                <th>Colación / <br> Movilización / <br> Trabajo Remoto</th>
+                                <th>Sueldo <br> líquido <br> aproximado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>$</td>
+                                <td>$</td>
+                                <td>$</td>
+                                <td>*UF</td>
+                                <td>$</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="container_02__paragraph_01">
+                        *Valor aproximado, considera sólo descuentos legales, si el plan de salud y/o AFP es
+                        distinta a lo legal, puede variar.
+                    </p>
+                    <p class="container_02__paragraph_01">
+                        *Valor definido en UF. Monto referencial en pesos.
+                    </p>
+                </section>
+                <section>
+                    <h3 class="container_01__subtitle_05">Beneficios hechos para ti</h3>
+                    <div class="container_02__block_02">
+                        <div>
+                            <i class="ri-heart-line container_02__icon_02"></i>
+                        </div>
+                        <div class="container_02__paragraph_04">
+                            Una vez que pases a contrato indefinido tendrás a tu tu disposición un mundo de beneficios y convenios especiales pensados en ti y tu familia
+                            <span class="bolder">¡Disfrutarlos es muy Itaú!</span>
+                        </div>
+                        <div>
+                            <img src="./PLAZO_FIJO_VIDEO.png" alt="">
+                        </div>
+                    </div>
+                    <!-- <p class="container_02__paragraph_05 bolder">
+                        Revisa el manual de benficios -> <a target="_blank"
+                            href="https://img.masterbase.com/v2/1/6101/b/Manual_beneficios/Manual_Beneficios_Itau_General_240523.pdf">Click
+                            aquí</a>
+                    </p> -->
+                    <div class="container_02__block_03">
+                        <p class="container_02__paragraph_06">
+                            Contigo, seguiremos avanzando en nuestro propósito de estimular el poder de transformación
+                            de
+                            las
+                            personas.
+                        </p>
+                    </div>
+                    <h3 class="container_02__paragraph_07">¡Esperamos contar contigo! Avanzamos juntos.</h3>
+                </section>
+                <div class="container_footer__text">
+                    <div class="footer__text">
+                        Gerencia Corporativa de Personas y Sustentabilidad
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+    </footer>
+</body>
+
+</html>
